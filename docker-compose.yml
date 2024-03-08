@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:23.0.0
+    ports:
+      - "8080:8080"
+    command: [ 'start-dev' ]
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    volumes:
+      - type: bind
+        source: ./target/keycloak-ip-range.jar
+        target: /opt/keycloak/providers/keycloak-ip-range.jar
