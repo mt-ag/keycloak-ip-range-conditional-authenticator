@@ -1,5 +1,7 @@
 # Keycloak IP Range Conditional Authentication SPI
 
+[![Maven CI](https://github.com/mt-ag/keycloak-ip-range-conditional-authenticator/actions/workflows/maven.yml/badge.svg)](https://github.com/mt-ag/keycloak-ip-range-conditional-authenticator/actions/workflows/maven.yml)
+
 Keycloak SPI that adds a condition for sub-flows to only be executed if the user's IP address is within a given range.
 
 ## Getting started
